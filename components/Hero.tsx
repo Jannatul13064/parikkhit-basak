@@ -15,7 +15,7 @@ import {
 export default function Hero() {
   const [mounted, setMounted] = useState(false);
   const [displayedName, setDisplayedName] = useState("");
-  const fullName = "Engr. Parikkhit Basak";
+  const fullName = "Engr. Parikshit Basak";
   const icons = [FaReact, FaJsSquare, FaDatabase, FaNodeJs, FaCloud];
   const orbitRadius = 200;
 
@@ -63,7 +63,7 @@ export default function Hero() {
 
         <Image
           src="/images/personal/profile.png"
-          alt="Engr. Parikkhit Basak"
+          alt="Engr. Parikshit Basak"
           fill
           sizes="(max-width: 768px) 280px, 340px"
           className="object-cover rounded-full"

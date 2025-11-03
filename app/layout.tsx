@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" />
-        <title>Parikkhit Bask </title>
+        <title>Parikshit Basak </title>
       </head>
       <body className="relative text-white pt-0">
         <Header />

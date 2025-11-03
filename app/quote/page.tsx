@@ -13,58 +13,54 @@ type Quote = {
 export default function Quote() {
   const quotes: Quote[] = [
     {
-      text: "The best among you are those who have the best manners and character.",
-      author: "Prophet Muhammad ﷺ",
-      arabic: "خيركم أحسنكم أخلاقاً.",
+      text: "Innovation distinguishes between a leader and a follower.",
+      author: "Steve Jobs",
+      bangla: "নবপ্রবর্তন একজন নেতাকে অনুসারীর থেকে আলাদা করে।",
     },
     {
-      text: "When you are grateful, I will surely increase you [in favor].",
-      author: "Quran 14:7",
-      arabic: "وَإِذْ تَشْكُرُوا يَرْفَعْكُمْ",
+      text: "Success is the sum of small efforts, repeated day in and day out.",
+      author: "Robert Collier",
       bangla:
-        "আপনি যখন কৃতজ্ঞ থাকবেন, আমি নিশ্চিতভাবে আপনার প্রতি বরকত বৃদ্ধি করব।",
+        "সাফল্য হলো ছোট ছোট প্রচেষ্টার সমষ্টি, যা প্রতিদিন পুনরাবৃত্তি করা হয়।",
     },
     {
-      text: "Prayer is the key to Paradise.",
-      author: "Islamic Saying",
-      arabic: "الصلاة مفتاح الجنة",
-      bangla: "নামাজই জান্নাতের চাবিকাঠি।",
+      text: "The best way to predict the future is to create it.",
+      author: "Peter Drucker",
+      bangla: "ভবিষ্যৎ পূর্বাভাস করার সর্বোত্তম উপায় হলো এটি তৈরি করা।",
     },
     {
-      text: "The best among you are those who have the best manners and character.",
-      author: "Prophet Muhammad ﷺ",
-      arabic: "خيركم أحسنكم أخلاقاً.",
-    },
-    {
-      text: "When you are grateful, I will surely increase you [in favor].",
-      author: "Quran 14:7",
-      arabic: "وَإِذْ تَشْكُرُوا يَرْفَعْكُمْ",
+      text: "Leadership is not about being in charge. It is about taking care of those in your charge.",
+      author: "Simon Sinek",
       bangla:
-        "আপনি যখন কৃতজ্ঞ থাকবেন, আমি নিশ্চিতভাবে আপনার প্রতি বরকত বৃদ্ধি করব।",
+        "নেতৃত্ব মানে ক্ষমতায় থাকা নয়, এটি মানে আপনার দায়িত্বে থাকা মানুষদের যত্ন নেওয়া।",
     },
     {
-      text: "Prayer is the key to Paradise.",
-      author: "Islamic Saying",
-      arabic: "الصلاة مفتاح الجنة",
-      bangla: "নামাজই জান্নাতের চাবিকাঠি।",
+      text: "Excellence is not a skill, it’s an attitude.",
+      author: "Ralph Marston",
+      bangla: "উৎকৃষ্টতা একটি দক্ষতা নয়, এটি একটি মনোভাব।",
+    },
+    {
+      text: "Dream big, start small, act now.",
+      author: "Unknown",
+      bangla: "বড় স্বপ্ন দেখুন, ছোট শুরু করুন, এখনই কাজ শুরু করুন।",
     },
   ];
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen px-4 py-16 to-black text-white">
+    <main className="flex flex-col items-center justify-center min-h-screen px-4 py-16 bg-black text-white">
       <h1 className="text-4xl sm:text-5xl font-extrabold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 pb-3">
-        Inspirational Quotes
+        Professional Insights
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
         {quotes.map((quote, i) => (
           <motion.div
             key={i}
-            className="relative bg-gray-800/80 p-6 rounded-3xl shadow-2xl border border-gray-700 perspective"
+            className="relative bg-gray-900/80 p-6 rounded-3xl shadow-2xl border border-gray-800 perspective"
             whileHover={{ rotateY: 10, rotateX: 5, scale: 1.05 }}
             transition={{ type: "spring", stiffness: 100, damping: 10 }}
           >
-            <div className="absolute top-4 left-4 text-blue-400 text-2xl">
+            <div className="absolute top-4 left-4 text-cyan-400 text-2xl">
               <FaQuoteLeft />
             </div>
 
@@ -84,7 +80,7 @@ export default function Quote() {
               </p>
             )}
 
-            <footer className="text-blue-400 font-semibold flex items-center justify-end gap-2">
+            <footer className="text-cyan-400 font-semibold flex items-center justify-end gap-2">
               — {quote.author} <FaQuoteRight />
             </footer>
           </motion.div>
