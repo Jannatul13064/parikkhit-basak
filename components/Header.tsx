@@ -18,7 +18,6 @@ export default function Header() {
     { href: "/quote", label: "Quote" },
     { href: "/gallery", label: "Gallery" },
     { href: "/contact", label: "Contact" },
-    { href: "/cv", label: "CV" },
   ];
 
   return (
@@ -26,7 +25,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
         {/* 🪪 Logo */}
         <Link href="/" className="text-2xl font-bold text-white tracking-wide">
-          Shourave
+          Basak
         </Link>
 
         {/* 🌐 Desktop Navigation */}
