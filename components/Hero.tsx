@@ -73,7 +73,7 @@ export default function Hero() {
 
       {/* === Name Typing === */}
       <motion.h1
-        className="mt-10 text-4xl sm:text-6xl font-extrabold bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400 text-transparent bg-clip-text"
+        className="mt-10 text-4xl sm:text-6xl font-extrabold bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400 text-transparent bg-clip-text pb-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6 }}
