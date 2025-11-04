@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
+import { main } from "framer-motion/client";
 
 // Define the type for each work item
 type WorkItem = {
@@ -54,22 +55,26 @@ function Card({ title, role, desc, img }: WorkItem) {
       whileHover={{ scale: 1.05, rotateX: 2, rotateY: 2 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
     >
-      <div className="h-48 w-full relative overflow-hidden rounded-t-3xl">
-        <Image
-          src={img}
-          alt={title}
-          fill
-          className="object-cover transition-transform duration-500 ease-in-out hover:scale-110"
-        />
-      </div>
-      <div className="p-5">
-        <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-          {title}
-        </h3>
-        <p className="text-sm text-blue-600 dark:text-blue-400 font-medium mt-1">
-          {role}
-        </p>
-        <p className="text-gray-700 dark:text-gray-300 mt-2 text-sm">{desc}</p>
+      <div>
+        <div className="h-48 w-full relative overflow-hidden rounded-t-3xl">
+          <Image
+            src={img}
+            alt={title}
+            fill
+            className="object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+          />
+        </div>
+        <div className="p-5">
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+            {title}
+          </h3>
+          <p className="text-sm text-blue-600 dark:text-blue-400 font-medium mt-1">
+            {role}
+          </p>
+          <p className="text-gray-700 dark:text-gray-300 mt-2 text-sm">
+            {desc}
+          </p>
+        </div>
       </div>
     </motion.div>
   );

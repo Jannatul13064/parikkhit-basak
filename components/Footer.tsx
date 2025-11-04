@@ -3,8 +3,8 @@ export default function Footer() {
     <footer className="text-center py-6 mt-20 text-gray-400 border-t border-gray-800">
       <p className="text-sm">
         © {new Date().getFullYear()}{" "}
-        <span className="text-white font-semibold">Md Shahriar Shourave</span>.{" "}
-        All rights reserved.
+        <span className="text-white font-semibold">Parikshit Basak</span>. All
+        rights reserved.
       </p>
       <p className="mt-2 text-xs">
         Developed by{" "}

@@ -61,7 +61,7 @@ export default function Contact() {
                 href="mailto:corporation.abc.bd@gmail.com"
                 className="text-gray-200 hover:text-blue-400 transition-colors text-sm sm:text-base break-all"
               >
-                corporation.abc.bd@gmail.com
+                basak.auto.2017@gmail.com
               </a>
             </div>
 
@@ -71,7 +71,7 @@ export default function Contact() {
                 href="tel:+8801711460062"
                 className="text-gray-200 hover:text-blue-400 transition-colors text-sm sm:text-base"
               >
-                +8801711460062
+                +8801730795194
               </a>
             </div>
 

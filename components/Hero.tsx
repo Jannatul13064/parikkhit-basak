@@ -4,20 +4,11 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FaReact,
-  FaJsSquare,
-  FaDatabase,
-  FaNodeJs,
-  FaCloud,
-} from "react-icons/fa";
 
 export default function Hero() {
   const [mounted, setMounted] = useState(false);
   const [displayedName, setDisplayedName] = useState("");
-  const fullName = "Engr. Parikshit Basak";
-  const icons = [FaReact, FaJsSquare, FaDatabase, FaNodeJs, FaCloud];
-  const orbitRadius = 200;
+  const fullName = "Parikshit Basak";
 
   useEffect(() => setMounted(true), []);
 
@@ -40,6 +31,11 @@ export default function Hero() {
       transition={{ duration: 1, ease: "easeOut" }}
       className="relative flex flex-col items-center justify-center min-h-[90vh] overflow-hidden text-center py-20 px-4"
     >
+      {/* ✨ Animated background light blobs */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] bg-blue-600/20 rounded-full blur-3xl top-0 left-0 animate-pulse"></div>
+        <div className="absolute w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] bg-purple-600/20 rounded-full blur-3xl bottom-0 right-0 animate-pulse"></div>
+      </div>
       {/* === Profile Image === */}
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
@@ -73,7 +69,7 @@ export default function Hero() {
 
       {/* === Name Typing === */}
       <motion.h1
-        className="mt-10 text-4xl sm:text-6xl font-extrabold bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400 text-transparent bg-clip-text pb-4"
+        className="mt-10 text-4xl sm:text-6xl font-extrabold bg-gradient-to-r from-cyan-300 to-purple-400 text-transparent bg-clip-text pb-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6 }}
